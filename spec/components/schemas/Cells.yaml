@@ -1,0 +1,19 @@
+type: object
+additionalProperties:
+  type: object
+  required: ['mappings', 'xy', 'genes', 'factors', 'poly']
+  properties:
+    mappings:
+      type: object
+      additionalProperties:
+        $ref: '#/components/schemas/Coordinate'
+    xy:
+      $ref: '#/components/schemas/Coordinate'
+    genes:
+      $ref: '#/components/schemas/PositiveIntegerValues'
+    factors:
+      $ref: '#/components/schemas/StringValues'
+    poly:
+      type: array
+      items:
+        $ref: '#/components/schemas/Coordinate'
