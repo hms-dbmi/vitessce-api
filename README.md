@@ -5,11 +5,12 @@
 this describes an API [Vitessce](https://github.com/hms-dbmi/vitessce) could consume,
 and HuBMAP could provide.
 
-## Links
+## Generated documentation on GH Pages
 
 - [Reference Documentation (ReDoc)](https://hms-dbmi.github.io/vitessce-api/)
-- [SwaggerUI](https://hms-dbmi.github.io/vitessce-api/swagger-ui/)
-- OpenAPI Raw Files: [JSON](https://hms-dbmi.github.io/vitessce-api/openapi.json) [YAML](https://hms-dbmi.github.io/vitessce-api/openapi.yaml)
+- OpenAPI Raw Files:
+  - [JSON](https://hms-dbmi.github.io/vitessce-api/openapi.json)
+  - [YAML](https://hms-dbmi.github.io/vitessce-api/openapi.yaml)
 
 **Warning:** All above links are updated only after Travis CI finishes deployment
 
