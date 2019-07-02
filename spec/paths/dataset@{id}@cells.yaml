@@ -1,0 +1,21 @@
+parameters:
+  - name: id
+    in: path
+    required: true
+    description: data set ID
+    schema:
+      type: string
+get:
+  summary: Get cell data
+  description: |
+    Gets detailed information for the cells in a data set.
+  operationId: getCells
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Cells'
+    '404':
+      description: Data set not found
