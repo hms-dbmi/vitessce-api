@@ -6,14 +6,14 @@ additionalProperties:
     mappings:
       type: object
       additionalProperties:
-        $ref: '#/components/schemas/Coordinate'
+        $ref: '#/components/schemas/coordinate'
     xy:
-      $ref: '#/components/schemas/Coordinate'
+      $ref: '#/components/schemas/coordinate'
     genes:
-      $ref: '#/components/schemas/PositiveIntegerValues'
+      $ref: '#/components/schemas/positive-integer-values'
     factors:
-      $ref: '#/components/schemas/StringValues'
+      $ref: '#/components/schemas/string-values'
     poly:
       type: array
       items:
-        $ref: '#/components/schemas/Coordinate'
+        $ref: '#/components/schemas/coordinate'
