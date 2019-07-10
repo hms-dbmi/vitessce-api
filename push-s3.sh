@@ -15,4 +15,4 @@ DEST_PATH="vitessce-data/vitessce-api/$DATE/$HASH/openapi.json"
 aws s3 cp web_deploy/openapi.json "s3://$DEST_PATH"
 DEST_URL="https://s3.amazonaws.com/$DEST_PATH"
 
-echo "- $DATE: [$BRANCH]($DEST_URL)" >> versions.md
+echo "- $DATE: $BRANCH: $HASH: [HTML](https://redocly.github.io/redoc/?url=$DEST_URL) [JSON]($DEST_URL)" >> versions.md
