@@ -1,7 +1,12 @@
 type: object
 additionalProperties:
   type: object
-  required: ['mappings', 'xy', 'genes', 'factors', 'poly']
+  required:
+    - mappings
+    - xy
+    - genes
+    - factors
+    - poly
   properties:
     mappings:
       type: object

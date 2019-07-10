@@ -3,6 +3,5 @@ apiTitle: vitessce-api
 splitSpec: true
 codeSamples: true
 swaggerUI: true
-travis: true
 repo: hms-dbmi/vitessce-api
 oasVersion: 3.0.0
