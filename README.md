@@ -62,3 +62,5 @@ See [NPM](https://www.npmjs.com/package/vitessce-api).
 | date | branch | version | git hash | as html | as json |
 | ---- | ------ | ------- | -------- | ------- | ------- |
 | 2019-07-11 | mccalluc/as-table | 0.0.4-rc | [4f446c6](https://github.com/hms-dbmi/vitessce-api/tree/4f446c6) | [html](https://redocly.github.io/redoc/?url=https://s3.amazonaws.com/vitessce-data/vitessce-api/2019-07-11/4f446c6/openapi.json) | [json](https://s3.amazonaws.com/vitessce-data/vitessce-api/2019-07-11/4f446c6/openapi.json) |
+| 2019-07-11 | mccalluc/fill-out-end-points | 0.0.4-rc | [1797738](https://github.com/hms-dbmi/vitessce-api/tree/1797738) | [html](https://redocly.github.io/redoc/?url=https://s3.amazonaws.com/vitessce-data/vitessce-api/2019-07-11/1797738/openapi.json) | [json](https://s3.amazonaws.com/vitessce-data/vitessce-api/2019-07-11/1797738/openapi.json) |
+|  |  | [0.0.4-rc](https://www.npmjs.com/package/vitessce-api/v/0.0.4-rc) |  |  |  |
