@@ -8,6 +8,7 @@ This provides much the same editing interface as Swagger, except on localhost.
 
 Contrasted with SwaggerHub, this approach provides:
 - The GitHub ecosystem we're familiar with.
+- We edit the spec as small files, and a build process assembles the monolithic OAS JSON.
 - Intermediate versions can be "published" to S3 for public review, without creating a new version number.
 - Final version is published to NPM where it can be referenced like any other dependency.
 
