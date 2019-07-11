@@ -10,6 +10,6 @@ JSON=`cat web_deploy/openapi.json`
 DATE=`date "+%Y-%m-%d"`
 
 echo "// DO NOT hand edit! Regenerated on $DATE.
-module.exports = $OAS;" > index.js
+module.exports = $JSON;" > index.js
 
 # npm publish
