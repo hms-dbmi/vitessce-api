@@ -1,4 +1,7 @@
 language: node_js
 node_js:
-  - "node"
-# "npm test" is implicit
+  - node
+script:
+  - npm test
+  - npm run build
+  - ./test-version.sh

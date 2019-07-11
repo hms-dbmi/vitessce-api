@@ -4,6 +4,11 @@
 this describes an API [Vitessce](https://github.com/hms-dbmi/vitessce) could consume,
 and HuBMAP could provide.
 
+Out of the box, create-openapi-repo provides a nice integration with Travis and GitHub Pages,
+but it doesn't match our needs right now:
+- Only the latest version is visible: Older versions could be regenerated, but they aren't accessible at a URL.
+- Waiting for Travis before merging is important, but it shouldn't be necessary to just show a work in progress.
+
 This provides much the same editing interface as Swagger, except on localhost.
 
 Contrasted with SwaggerHub, this approach provides:
@@ -24,6 +29,8 @@ and if there are other tools which better match our needs, please suggest them!
 Running on localhost, you can make edits in the web interface and they will be saved to the local filesystem.
 
 ## Publish
+
+The publish scripts need `jq`: Install with [homebrew/apt-get/etc.](https://stedolan.github.io/jq/download/).
 
 Work should be done in a feature branch, rather than committing directly to master.
 When you have work you'd like others to see, run `./push-s3.sh`:
@@ -51,6 +58,6 @@ See [NPM](https://www.npmjs.com/package/vitessce-api).
 
 ### Demos
 
-| date | branch | git hash | as html | as json |
-| ---- | ------ | -------- | ------- | ------- |
-| 2019-07-10 | mccalluc/next-steps | [9102429](https://github.com/hms-dbmi/vitessce-api/tree/9102429) | [html](https://redocly.github.io/redoc/?url=https://s3.amazonaws.com/vitessce-data/vitessce-api/2019-07-10/9102429/openapi.json) | [json](https://s3.amazonaws.com/vitessce-data/vitessce-api/2019-07-10/9102429/openapi.json) |
+| date | branch | version | git hash | as html | as json |
+| ---- | ------ | ------- | -------- | ------- | ------- |
+| 2019-07-11 | mccalluc/as-table | 0.0.4-rc | [4f446c6](https://github.com/hms-dbmi/vitessce-api/tree/4f446c6) | [html](https://redocly.github.io/redoc/?url=https://s3.amazonaws.com/vitessce-data/vitessce-api/2019-07-11/4f446c6/openapi.json) | [json](https://s3.amazonaws.com/vitessce-data/vitessce-api/2019-07-11/4f446c6/openapi.json) |
