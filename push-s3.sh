@@ -16,7 +16,7 @@ DEST_PATH="vitessce-data/vitessce-api/$DATE/$HASH/openapi.json"
 
 aws s3 cp web_deploy/openapi.json "s3://$DEST_PATH"
 JSON_URL="https://s3.amazonaws.com/$DEST_PATH"
-HTML_URL="https://redocly.github.io/redoc/?url=$DEST_URL"
+HTML_URL="https://redocly.github.io/redoc/?url=$JSON_URL"
 GITHUB_URL="https://github.com/hms-dbmi/vitessce-api/tree/$HASH"
 
 echo "| $DATE | $BRANCH | $VERSION | [$HASH]($GITHUB_URL) | [html]($HTML_URL) | [json]($JSON_URL) |" >> README.md
