@@ -51,6 +51,6 @@ See [NPM](https://www.npmjs.com/package/vitessce-api).
 
 ### Demos
 
-- 2019-07-10: mccalluc/next-steps: 9102429: [HTML](https://redocly.github.io/redoc/?url=https://s3.amazonaws.com/vitessce-data/vitessce-api/2019-07-10/9102429/openapi.json) [JSON](https://s3.amazonaws.com/vitessce-data/vitessce-api/2019-07-10/9102429/openapi.json)
-- 2019-07-10: mccalluc/next-steps: 58a816c: [HTML](https://redocly.github.io/redoc/?url=https://s3.amazonaws.com/vitessce-data/vitessce-api/2019-07-10/58a816c/openapi.json) [JSON](https://s3.amazonaws.com/vitessce-data/vitessce-api/2019-07-10/58a816c/openapi.json)
-- 2019-07-11: mccalluc/next-steps: 295f6ed: [HTML](https://redocly.github.io/redoc/?url=https://s3.amazonaws.com/vitessce-data/vitessce-api/2019-07-11/295f6ed/openapi.json) [JSON](https://s3.amazonaws.com/vitessce-data/vitessce-api/2019-07-11/295f6ed/openapi.json)
+| date | branch | git hash | as html | as json |
+| ---- | ------ | -------- | ------- | ------- |
+| 2019-07-10 | mccalluc/next-steps | [9102429](https://github.com/hms-dbmi/vitessce-api/tree/9102429) | [html](https://redocly.github.io/redoc/?url=https://s3.amazonaws.com/vitessce-data/vitessce-api/2019-07-10/9102429/openapi.json) | [json](https://s3.amazonaws.com/vitessce-data/vitessce-api/2019-07-10/9102429/openapi.json) |
