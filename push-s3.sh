@@ -3,9 +3,10 @@ set -o errexit
 set -o pipefail
 
 die() { set +v; echo "$*" 1>&2 ; exit 1; }
-git diff --quiet || die 'Uncommitted changes: Stash or commit before pushing demo.'
 
-npm run build  # TODO: Is there some way to see if there are changes since last build?
+npm run build
+./test.sh
+git diff --quiet || die 'Uncommitted changes: Stash or commit before pushing demo.'
 
 BRANCH=`git rev-parse --abbrev-ref HEAD`
 DATE=`date "+%Y-%m-%d"`

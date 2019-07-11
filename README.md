@@ -25,6 +25,8 @@ Running on localhost, you can make edits in the web interface and they will be s
 
 ## Publish
 
+The publish scripts need `jq`: Install with [homebrew/apt-get/etc.](https://stedolan.github.io/jq/download/).
+
 Work should be done in a feature branch, rather than committing directly to master.
 When you have work you'd like others to see, run `./push-s3.sh`:
 That will update the list at the bottom of this README.
