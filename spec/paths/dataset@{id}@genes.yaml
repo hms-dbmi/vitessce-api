@@ -1,0 +1,21 @@
+parameters:
+  - name: id
+    in: path
+    required: true
+    description: data set ID
+    schema:
+      type: string
+get:
+  summary: Get gene data
+  description: |
+    Gets detailed information for the genes in a data set.
+  operationId: getGenes
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Genes'
+    '404':
+      description: Data set not found

@@ -1,0 +1,21 @@
+parameters:
+  - name: id
+    in: path
+    required: true
+    description: data set ID
+    schema:
+      type: string
+get:
+  summary: Get image data
+  description: |
+    Gets detailed information for the images in a data set.
+  operationId: getCells
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Images'
+    '404':
+      description: Data set not found
