@@ -5,7 +5,7 @@ set -o pipefail
 die() { set +v; echo "$*" 1>&2 ; exit 1; }
 
 npm run build
-./test.sh
+./test-version.sh
 git diff --quiet || die 'Uncommitted changes: Stash or commit before pushing demo.'
 
 BRANCH=`git rev-parse --abbrev-ref HEAD`
