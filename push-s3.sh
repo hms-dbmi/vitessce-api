@@ -15,6 +15,9 @@ VERSION=`jq -r .version package.json`
 DEST_PATH="vitessce-data/vitessce-api/$DATE/$HASH/openapi.json"
 
 aws s3 cp web_deploy/openapi.json "s3://$DEST_PATH"
-DEST_URL="https://s3.amazonaws.com/$DEST_PATH"
+JSON_URL="https://s3.amazonaws.com/$DEST_PATH"
+HTML_URL="https://redocly.github.io/redoc/?url=$DEST_URL"
+GITHUB_URL="https://github.com/hms-dbmi/vitessce-api/tree/$HASH"
 
-echo "| $DATE | $BRANCH | $VERSION | [$HASH](https://github.com/hms-dbmi/vitessce-api/tree/$HASH) | [html](https://redocly.github.io/redoc/?url=$DEST_URL) | [json]($DEST_URL) |" >> README.md
+echo "| $DATE | $BRANCH | $VERSION | [$HASH]($GITHUB_URL) | [html]($HTML_URL) | [json]($JSON_URL) |" >> README.md
+echo "Demo: $HTML_URL"
