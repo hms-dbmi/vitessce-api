@@ -42,7 +42,13 @@ import { api } from 'vitessce-api';
 console.log('Here is your API:', api);
 ```
 
-## Demos and Releases
+## Releases and Demos
+
+### Releases
+
+See [NPM](https://www.npmjs.com/package/vitessce-api).
+
+### Demos
 
 - 2019-07-10: mccalluc/next-steps: 9102429: [HTML](https://redocly.github.io/redoc/?url=https://s3.amazonaws.com/vitessce-data/vitessce-api/2019-07-10/9102429/openapi.json) [JSON](https://s3.amazonaws.com/vitessce-data/vitessce-api/2019-07-10/9102429/openapi.json)
 - 2019-07-10: mccalluc/next-steps: 58a816c: [HTML](https://redocly.github.io/redoc/?url=https://s3.amazonaws.com/vitessce-data/vitessce-api/2019-07-10/58a816c/openapi.json) [JSON](https://s3.amazonaws.com/vitessce-data/vitessce-api/2019-07-10/58a816c/openapi.json)
