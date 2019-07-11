@@ -4,6 +4,11 @@
 this describes an API [Vitessce](https://github.com/hms-dbmi/vitessce) could consume,
 and HuBMAP could provide.
 
+Out of the box, create-openapi-repo provides a nice integration with Travis and GitHub Pages,
+but it doesn't match our needs right now:
+- Only the latest version is visible: Older versions could be regenerated, but they aren't accessible at a URL.
+- Waiting for Travis before merging is important, but it shouldn't be necessary to just show a work in progress.
+
 This provides much the same editing interface as Swagger, except on localhost.
 
 Contrasted with SwaggerHub, this approach provides:
