@@ -5,4 +5,7 @@
 # These are only needed in development:
 spec
 web
+web_deploy
 *.sh
+.redoclyrc
+.travis.yml

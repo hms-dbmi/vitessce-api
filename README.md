@@ -21,3 +21,4 @@ Bundles the spec and prepares web_deploy folder with static assets.
 #### `npm test`
 Validates the spec.
 - 2019-07-10: mccalluc/next-steps: 9102429: [HTML](https://redocly.github.io/redoc/?url=https://s3.amazonaws.com/vitessce-data/vitessce-api/2019-07-10/9102429/openapi.json) [JSON](https://s3.amazonaws.com/vitessce-data/vitessce-api/2019-07-10/9102429/openapi.json)
+- 2019-07-10: mccalluc/next-steps: 58a816c: [HTML](https://redocly.github.io/redoc/?url=https://s3.amazonaws.com/vitessce-data/vitessce-api/2019-07-10/58a816c/openapi.json) [JSON](https://s3.amazonaws.com/vitessce-data/vitessce-api/2019-07-10/58a816c/openapi.json)
