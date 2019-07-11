@@ -1,3 +1,7 @@
-# Dir for API portal deploy
-web_deploy
 node_modules
+
+# Dir for API portal deploy:
+web_deploy
+
+# Regenerated when pushing to NPM:
+index.js

@@ -1,0 +1,11 @@
+# NPM will ignore everything in the .gitignore by default...
+# but we need the regenerated index.js to be included in the package,
+# so we have this .npmignore to take precedence.
+
+# These are only needed in development:
+spec
+web
+web_deploy
+*.sh
+.redoclyrc
+.travis.yml
