@@ -4,18 +4,19 @@
 this describes an API [Vitessce](https://github.com/hms-dbmi/vitessce) could consume,
 and HuBMAP could provide.
 
-Out of the box, create-openapi-repo provides a nice integration with Travis and GitHub Pages,
-but it doesn't match our needs right now:
-- Only the latest version is visible: Older versions could be regenerated, but they aren't accessible at a URL.
-- Waiting for Travis before merging is important, but it shouldn't be necessary to just show a work in progress.
+## Why?
 
-This provides much the same editing interface as Swagger, except on localhost.
-
+When running on localhost, this provides much the same editing interface as Swagger.
 Contrasted with SwaggerHub, this approach provides:
 - The GitHub ecosystem we're familiar with.
 - We edit the spec as small files, and a build process assembles the monolithic OAS JSON.
 - Intermediate versions can be "published" to S3 for public review, without creating a new version number.
 - Final version is published to NPM where it can be referenced like any other dependency.
+
+Out of the box, create-openapi-repo does provide a nice integration with Travis and GitHub Pages,
+but it doesn't match our needs right now:
+- Only the latest version is visible: Older versions could be regenerated, but they aren't accessible at a URL.
+- Waiting for Travis before merging is important, but it shouldn't be necessary to just show a work in progress.
 
 There are things about this approach which do seem weird to me,
 and if there are other tools which better match our needs, please suggest them!
