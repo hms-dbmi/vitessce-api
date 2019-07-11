@@ -15,5 +15,3 @@ module.exports = $JSON;" > index.js
 npm publish
 
 echo 'Published to NPM!'
-grep 'name' package.json
-grep 'version' package.json
