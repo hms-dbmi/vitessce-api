@@ -6,11 +6,12 @@ set -o pipefail
 
 echo 'Generating index.js...'
 
-JSON=`cat web_deploy/openapi.json`
+API_JSON=`cat web_deploy/openapi.json`
 DATE=`date "+%Y-%m-%d"`
+FULL_JSON="{ regeneratedDate: '$DATE', api: $API }"
 
 echo "// DO NOT hand edit! Regenerated on $DATE.
-module.exports = $JSON;" > index.js
+module.exports = $FULL_JSON;" > index.js
 
 npm publish
 
