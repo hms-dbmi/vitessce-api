@@ -1,0 +1,12 @@
+type: object
+additionalProperties:
+  additionalProperties: false
+  required:
+    - poly
+  properties:
+    poly:
+      type: array
+      maxItems: 3
+      minItems: 3
+      items:
+        $ref: '#/components/schemas/coordinate'

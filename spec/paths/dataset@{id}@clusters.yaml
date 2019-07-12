@@ -1,0 +1,21 @@
+parameters:
+  - name: id
+    in: path
+    required: true
+    description: data set ID
+    schema:
+      type: string
+get:
+  summary: Get gene-cell hierarchical clustering data
+  description: |
+    Returns a pre-clustered matrix which can be used to render a heatmap.
+  operationId: getClusters
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Clusters'
+    '404':
+      description: Data set not found

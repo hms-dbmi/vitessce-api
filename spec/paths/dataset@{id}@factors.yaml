@@ -1,0 +1,21 @@
+parameters:
+  - name: id
+    in: path
+    required: true
+    description: data set ID
+    schema:
+      type: string
+get:
+  summary: Get factor data
+  description: |
+    Gets factor information for the cells in a data set.
+  operationId: getFactors
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Factors'
+    '404':
+      description: Data set not found

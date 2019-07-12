@@ -1,0 +1,13 @@
+type: object
+additionalProperties: false
+required:
+  - rows
+  - cols
+  - matrix
+properties:
+  rows:
+    $ref: '#/components/schemas/string-array'
+  cols:
+    $ref: '#/components/schemas/string-array'
+  matrix:
+    $ref: '#/components/schemas/matrix'

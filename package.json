@@ -1,6 +1,6 @@
 {
   "name": "vitessce-api",
-  "version": "0.0.4-rc",
+  "version": "0.0.4",
   "devDependencies": {
     "lodash": ">=4.17.13",
     "swagger-repo": "^2.0.0-rc.13",

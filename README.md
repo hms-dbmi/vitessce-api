@@ -4,18 +4,19 @@
 this describes an API [Vitessce](https://github.com/hms-dbmi/vitessce) could consume,
 and HuBMAP could provide.
 
-Out of the box, create-openapi-repo provides a nice integration with Travis and GitHub Pages,
-but it doesn't match our needs right now:
-- Only the latest version is visible: Older versions could be regenerated, but they aren't accessible at a URL.
-- Waiting for Travis before merging is important, but it shouldn't be necessary to just show a work in progress.
+## Why?
 
-This provides much the same editing interface as Swagger, except on localhost.
-
+When running on localhost, this provides much the same editing interface as Swagger.
 Contrasted with SwaggerHub, this approach provides:
 - The GitHub ecosystem we're familiar with.
 - We edit the spec as small files, and a build process assembles the monolithic OAS JSON.
 - Intermediate versions can be "published" to S3 for public review, without creating a new version number.
 - Final version is published to NPM where it can be referenced like any other dependency.
+
+Out of the box, create-openapi-repo does provide a nice integration with Travis and GitHub Pages,
+but it doesn't match our needs right now:
+- Only the latest version is visible: Older versions could be regenerated, but they aren't accessible at a URL.
+- Waiting for Travis before merging is important, but it shouldn't be necessary to just show a work in progress.
 
 There are things about this approach which do seem weird to me,
 and if there are other tools which better match our needs, please suggest them!
@@ -61,3 +62,7 @@ See [NPM](https://www.npmjs.com/package/vitessce-api).
 | date | branch | version | git hash | as html | as json |
 | ---- | ------ | ------- | -------- | ------- | ------- |
 | 2019-07-11 | mccalluc/as-table | 0.0.4-rc | [4f446c6](https://github.com/hms-dbmi/vitessce-api/tree/4f446c6) | [html](https://redocly.github.io/redoc/?url=https://s3.amazonaws.com/vitessce-data/vitessce-api/2019-07-11/4f446c6/openapi.json) | [json](https://s3.amazonaws.com/vitessce-data/vitessce-api/2019-07-11/4f446c6/openapi.json) |
+| 2019-07-11 | mccalluc/fill-out-end-points | 0.0.4-rc | [1797738](https://github.com/hms-dbmi/vitessce-api/tree/1797738) | [html](https://redocly.github.io/redoc/?url=https://s3.amazonaws.com/vitessce-data/vitessce-api/2019-07-11/1797738/openapi.json) | [json](https://s3.amazonaws.com/vitessce-data/vitessce-api/2019-07-11/1797738/openapi.json) |
+|  |  | [0.0.4-rc](https://www.npmjs.com/package/vitessce-api/v/0.0.4-rc) |  |  |  |
+| 2019-07-11 | mccalluc/fill-out-end-points | 0.0.4 | [e20910d](https://github.com/hms-dbmi/vitessce-api/tree/e20910d) | [html](https://redocly.github.io/redoc/?url=https://s3.amazonaws.com/vitessce-data/vitessce-api/2019-07-11/e20910d/openapi.json) | [json](https://s3.amazonaws.com/vitessce-data/vitessce-api/2019-07-11/e20910d/openapi.json) |
+|  |  | [0.0.4](https://www.npmjs.com/package/vitessce-api/v/0.0.4) |  |  |  |

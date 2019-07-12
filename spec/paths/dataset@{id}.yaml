@@ -1,0 +1,21 @@
+parameters:
+  - name: id
+    in: path
+    required: true
+    description: data set ID
+    schema:
+      type: string
+get:
+  summary: Get view configuration for a data set
+  description: |
+    Gets the view configuration for a data set.
+  operationId: getDataset
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Dataset'
+    '404':
+      description: Data set not found

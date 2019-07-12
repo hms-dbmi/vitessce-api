@@ -15,4 +15,7 @@ module.exports = $FULL_JSON;" > index.js
 
 npm publish
 
+VERSION=`jq -r .version package.json`
+echo "|  |  | [$VERSION](https://www.npmjs.com/package/vitessce-api/v/$VERSION) |  |  |  |" >> README.md
+
 echo 'Published to NPM!'

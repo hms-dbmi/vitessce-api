@@ -1,0 +1,14 @@
+type: object
+additionalProperties: false
+required:
+  - columns
+  - components
+properties:
+  columns:
+    type: object
+    additionalProperties:
+      type: array
+      items:
+        type: number
+  components:
+    $ref: '#/components/schemas/components'
