@@ -9,7 +9,7 @@ get:
   summary: Get image data
   description: |
     Gets detailed information for the images in a data set.
-  operationId: getCells
+  operationId: getImages
   responses:
     '200':
       description: Success

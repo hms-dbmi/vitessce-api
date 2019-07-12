@@ -1,0 +1,21 @@
+type: array
+items:
+  type: object
+  additionalProperties: false
+  required:
+    - component
+    - x
+    - 'y'
+  properties:
+    component:
+      type: string
+    props:
+      type: object
+    x:
+      type: integer
+    'y':
+      type: integer
+    w:
+      type: integer
+    h:
+      type: integer

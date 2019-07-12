@@ -1,1 +1,33 @@
 type: object
+additionalProperties: false
+required:
+  - name
+  - description
+  - layers
+properties:
+  name:
+    type: string
+  public:
+    type: boolean
+  description:
+    type: string
+  layers:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      required:
+        - name
+        - type
+        - url
+      properties:
+        name:
+          type: string
+        type:
+          type: string
+        url:
+          type: string
+  responsiveLayout:
+    $ref: '#/components/schemas/responsive-layout'
+  staticLayout:
+    $ref: '#/components/schemas/components'
