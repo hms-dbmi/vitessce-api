@@ -1,0 +1,13 @@
+type: object
+additionalProperties: false
+required:
+  - sample
+  - tileSource
+properties:
+  sample:
+    type: integer
+  tileSource:
+    oneOf:
+      - type: object
+      - type: string
+        format: uri

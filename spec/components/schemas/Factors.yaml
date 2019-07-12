@@ -1,1 +1,11 @@
 type: object
+additionalProperties:
+  additionalProperties: false
+  required:
+    - map
+    - cells
+  properties:
+    map:
+      $ref: '#/components/schemas/string-array'
+    cells:
+      $ref: '#/components/schemas/positive-integer-values'

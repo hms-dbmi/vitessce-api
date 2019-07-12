@@ -1,1 +1,11 @@
 type: object
+additionalProperties:
+  additionalProperties: false
+  required:
+    - max
+    - cells
+  properties:
+    max:
+      type: number
+    cells:
+      $ref: '#/components/schemas/positive-integer-values'
