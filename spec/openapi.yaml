@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  version: 0.0.4-rc
+  version: 0.0.4
   title: vitessce-api
   license:
     name: MIT
