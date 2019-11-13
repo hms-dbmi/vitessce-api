@@ -1,7 +1,12 @@
+## *Archived: Not in use, but as sample code might still be interesting.*
+
+The role that had been anticipated for this has instead been taken by the Vitessce JSON Schemas,
+and the HuBMAP APIs.
+
 # vitessce-api OpenAPI Specification
 
 **Work-in-progress!** Based on [create-openapi-repo](https://github.com/Redocly/create-openapi-repo),
-this describes an API [Vitessce](https://github.com/hms-dbmi/vitessce) could consume,
+this describes an API [Vitessce](https://github.com/hubmapconsortium/vitessce) could consume,
 and HuBMAP could provide.
 
 ## Why?
